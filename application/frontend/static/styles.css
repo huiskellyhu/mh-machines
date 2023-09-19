@@ -5,13 +5,19 @@
     font-size: large;
 }
 .quick-stats {
+    margin-top: 20px;
     margin-left: 30%;
     margin-right: 30%;
     border: 2px solid black;
     border-bottom-color:white;
-    text-indent: 10px;
+    text-indent: 25px;
     font-size: 20px;
 }
 .in-stats {
     text-indent: 20%;
+    margin-top: -20px;
+}
+.refresh {
+    text-align: right;
+    width: 100px;
 }

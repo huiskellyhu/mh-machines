@@ -15,7 +15,10 @@ CORS(app, supports_credentials=True)
 @cross_origin(supports_credentials=True)
 
 def index():
-    return render_template('index.html')
+    conn = connect_db()
+    autoclaves = conn.execute('SELECT * FROM autoclaves').fetchall()
+    conn.close()
+    return render_template('index.html', autoclaves=autoclaves)
 
 # def index():
 #     conn = connect_db()
