@@ -13,16 +13,34 @@
 <body>
     <div class="main">
         <h1>McGaugh Hall Machines</h1>
+        <p> Contact: kellyh12@uci.edu </p>
     </div>
-    
+
     <div class="quick-stats">
-        <h2>Statuses</h2>
-        <div class="in-stats">
-            {%for autoclaves in autoclaves%} 
-                <p>{{autoclaves['mname']}} <span>{{autoclaves['stat']}}</span> </p>
-            {% endfor %}
+        <div class="row">
+            <div class="column left">
+                
+                    <h2>Machine</h2>
+                    <div class="in-stats">
+                        {% for autoclaves in autoclaves%}
+                        <p>{{ autoclaves['mname'] }}</p>
+                        {% endfor %}
+                    </div>
+                
+            </div>
+            <div class="column mid">
+                <h2> Statuses </h2>
+                <div class="in-stats">
+                    {% for autoclaves in autoclaves %}
+                    <p>{{ autoclaves['stat'] }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="column right">
+                <h2> Approx. Time Done</h2>
+            </div>
         </div>
     </div>
-    <button onclick= "RefreshButton()" id="refreshButton" name="refreshButton">Refresh</button>
+    
 </body>
 </html>

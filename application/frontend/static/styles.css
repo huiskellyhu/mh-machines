@@ -1,23 +1,39 @@
+body {
+    background-color: #FCF6F5;
+}
 .main {
-    background-color: grey;
+    background-color: #990011;
+    padding:1%;
     text-align: center;
-    padding: 1%;
     font-size: large;
+    color: #FCF6F5;
 }
 .quick-stats {
     margin-top: 20px;
-    margin-left: 30%;
-    margin-right: 30%;
-    border: 2px solid black;
-    border-bottom-color:white;
+    margin-left: 10px;
+    margin-right: 0px;
+    
     text-indent: 25px;
     font-size: 20px;
+    text-align:center;
 }
 .in-stats {
-    text-indent: 20%;
+    text-align: center;
+    text-indent: 25px;
     margin-top: -20px;
 }
-.refresh {
-    text-align: right;
+.refreshButton {
+    margin-left: 90px;
     width: 100px;
 }
+
+.column {
+    float: left;
+    border: 2px;
+    border-color: black;
+}
+*{
+    box-sizing: border-box;
+}
+
+
