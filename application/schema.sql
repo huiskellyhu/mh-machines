@@ -5,5 +5,6 @@ CREATE TABLE autoclaves (
     mname VARCHAR(15),
     stat VARCHAR(10),
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    setting VARCHAR(15)
+    setting VARCHAR(15),
+    endtime DATETIME
 );

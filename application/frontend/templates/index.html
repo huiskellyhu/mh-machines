@@ -38,6 +38,11 @@
             </div>
             <div class="column right">
                 <h2> Approx. Time Done</h2>
+                <div class="in-stats">
+                    {%for autoclaves in autoclaves%}
+                    <p onload="calcEndTime(autoclaves['created'], autoclaves['setting'])" id="endTime"></p>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
